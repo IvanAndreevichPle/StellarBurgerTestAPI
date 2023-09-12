@@ -2,6 +2,7 @@ version: '3'
 services:
   stellarburgertestapi:
     build: .
+    command: mvn clean test
   allure:
     image: frankescobar/allure-docker-service    # Официальный образ Allure
     ports:
