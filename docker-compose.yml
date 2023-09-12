@@ -3,7 +3,7 @@ services:
   stellarburgertestapi:
     build: .
   allure:
-    image: allure:latest  # Официальный образ Allure
+    image: frankescobar/allure-docker-service    # Официальный образ Allure
     ports:
       - "8081:8081"  # Порт для отчетов Allure
     volumes:

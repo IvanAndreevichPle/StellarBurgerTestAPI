@@ -2,10 +2,12 @@
 FROM maven:3.8-jdk-11
 
 # Копируем содержимое проекта в контейнер
-COPY ./ /usr/src/app
+COPY ./ /app
+
+COPY pom.xml /app/
 
 # Устанавливаем рабочую директорию
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Собираем проект и выполняем тесты
 RUN mvn clean test
