@@ -1,6 +1,6 @@
 version: '3'
 services:
-  StellarBurgerTestAPI:
+  stellarburgertestapi:
     build: .
   allure:
     image: allure:latest  # Официальный образ Allure
