@@ -1,0 +1,10 @@
+version: '3'
+services:
+  StellarBurgerTestAPI:
+    build: .
+  allure:
+    image: allure:latest  # Официальный образ Allure
+    ports:
+      - "8081:8081"  # Порт для отчетов Allure
+    volumes:
+      - ./allure-results:/app/allure-results  # Монтируем директорию с результатами тестов
