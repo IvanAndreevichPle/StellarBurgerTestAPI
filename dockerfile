@@ -1,15 +1,9 @@
-# Используем базовый образ с Java и Maven
-FROM maven:3.8-jdk-11
+# Install maven and copy project for compilation
+FROM maven:latest as builder
 
-# Копируем содержимое проекта в контейнер
-COPY ./ /usr/src/app
+COPY pom.xml /usr/local/pom.xml
+COPY server /usr/local/server
+COPY client /usr/local/client
+WORKDIR /usr/local/
 
-COPY pom.xml /usr/src/app/
-
-COPY ./target/allure-results /usr/src/app/target/allure-results
-
-# Устанавливаем рабочую директорию
-WORKDIR /app
-
-# Собираем проект и выполняем тесты
-RUN mvn clean test
+RUN mvn clean install
