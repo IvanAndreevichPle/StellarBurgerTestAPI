@@ -12,8 +12,8 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - ./target/allure-results:/app/target/allure-results
-      - ./target/allure-reports:/app/target/default-reports
+      - ./target/allure-results:/usr/src/app/target/allure-results
+      - ./target/allure-reports:/usr/src/app/target/default-reports
     depends_on:
       - stellarburgertestapi
 
