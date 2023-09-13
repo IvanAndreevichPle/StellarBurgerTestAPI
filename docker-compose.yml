@@ -5,11 +5,28 @@ services:
     ports:
       - "8080:8080"
     command: mvn clean test
+
   allure:
-    image: frankescobar/allure-docker-service    # Официальный образ Allure
+    image: "frankescobar/allure-docker-service"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: 1
+      KEEP_HISTORY: 1
     ports:
-      - "8081:8081"  # Порт для отчетов Allure
+      - "5050:5050"
     volumes:
-      - ./allure-results:/app/allure-results  # Монтируем директорию с результатами тестов
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/allure-reports:/app/target/default-reports
     depends_on:
       - stellarburgertestapi
+
+  allure-ui:
+    image: "frankescobar/allure-docker-service-ui"
+    environment:
+      ALLURE_DOCKER_PUBLIC_API_URL: "http://77.232.131.169:5050"
+      ALLURE_DOCKER_PUBLIC_API_URL_PREFIX: ""
+    ports:
+      - "5252:5252"
+    depends_on:
+      - stellarburgertestapi
+
+
