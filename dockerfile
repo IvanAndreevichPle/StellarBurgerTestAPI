@@ -6,7 +6,7 @@ COPY ./ /app
 
 COPY pom.xml /app/
 
-COPY ./target/allure-results /app/target/allure-results
+COPY ./allure-results /app/allure-results
 
 # Устанавливаем рабочую директорию
 WORKDIR /app
