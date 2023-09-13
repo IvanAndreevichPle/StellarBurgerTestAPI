@@ -14,7 +14,7 @@ RUN mvn clean install
 FROM openjdk:11-jre-slim
 
 # Копируем JAR-файл приложения из контейнера сборки
-COPY --from=build /usr/src/app/target/stellarburgertestapi.jar /app/stellarburgertestapi.jar
+#COPY --from=build /usr/src/app/target/stellarburgertestapi.jar /app/stellarburgertestapi.jar
 
 # Рабочая директория
 WORKDIR /app
