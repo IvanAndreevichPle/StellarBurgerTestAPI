@@ -22,7 +22,8 @@ WORKDIR /app
 # Устанавливаем Allure CLI
 RUN apt-get update && \
     apt-get install -y allure && \
-    apt-get clean
+    apt-get clean && \
+    allure serve
 
 # Запускаем Allure Serve для автоматической генерации отчета
 CMD ["allure", "serve", "/app/allure-results"]
