@@ -91,7 +91,7 @@
                         <property>
                             <!-- папка, в которую будут генерироваться отчёты Allure -->
                             <name>allure.results.directory</name>
-                            <value>${project.build.directory}/allure-results</value>
+                            <value>allure-results</value>
                         </property>
                     </systemProperties>
                 </configuration>
@@ -109,7 +109,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
                 <configuration>
-                    <reportDirectory>target/allure-results</reportDirectory>
+                    <reportDirectory>allure-results</reportDirectory>
                     <reportVersion>2.15.0</reportVersion>
                 </configuration>
             </plugin>
