@@ -1,15 +1,13 @@
-# Используем базовый образ с Java и Maven
-FROM maven:3.8-jdk-11
+# Используйте базовый образ, который подходит для вашего Java-приложения
+# Например, openjdk:11-jre-slim
+FROM openjdk:11-jre-slim
 
-# Копируем содержимое проекта в контейнер
-COPY ./ /app
+# Установка необходимых пакетов и зависимостей, если это требуется
+# RUN apt-get update && apt-get install -y ...
 
-COPY pom.xml /app/
+# Копирование JAR-файла с вашим приложением в контейнер
+COPY target/stellarburgertestapi.jar /app/stellarburgertestapi.jar
 
-COPY ./target/allure-results /app/target/allure-results
-
-# Устанавливаем рабочую директорию
+# Установка рабочей директории
 WORKDIR /app
 
-# Собираем проект и выполняем тесты
-RUN mvn clean test
