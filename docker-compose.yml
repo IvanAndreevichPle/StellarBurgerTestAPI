@@ -4,6 +4,6 @@ services:
     build: .
     ports:
       - "8080:8080"
-    command: sh -c "mvn clean test && allure generate target/allure-results --clean -o target/allure-report && allure serve target/allure-report"
+    command: allure generate target/allure-results --clean -o target/allure-report && allure serve target/allure-report
     volumes:
       - ./allure-results:/app/target/allure-results
