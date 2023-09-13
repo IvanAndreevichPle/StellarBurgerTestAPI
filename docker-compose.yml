@@ -2,8 +2,6 @@ version: '3'
 services:
   stellarburgertestapi:
     build: .
-    ports:
-      - "8080:8080"
     command: mvn clean test
 
   allure:
@@ -14,8 +12,8 @@ services:
     ports:
       - "5050:5050"
     volumes:
-      - ./allure-results:/app/allure-results
-      - ./allure-reports:/app/default-reports
+      - ./target/allure-results:/app/target/allure-results
+      - ./target/allure-reports:/app/target/default-reports
     depends_on:
       - stellarburgertestapi
 
