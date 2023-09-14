@@ -1,0 +1,116 @@
+{
+  "uid" : "d3fcd5550c144a42",
+  "name" : "Создание пользователя",
+  "fullName" : "user.TestCreateUser.userCreate",
+  "historyId" : "f5a7be04bf8965ebba70c7fd4659b055",
+  "time" : {
+    "start" : 1694676411907,
+    "stop" : 1694676417906,
+    "duration" : 5999
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676416913,
+        "stop" : 1694676416924,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676416924,
+        "stop" : 1694676417375,
+        "duration" : 451
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@22430931"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676417383,
+        "stop" : 1694676417906,
+        "duration" : 523
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWMxOWVkMjgwMDAxYjM2MTAwZSIsImlhdCI6MTY5NDY3NjQxNywiZXhwIjoxNjk0Njc3NjE3fQ.Oj3aPB9FtInmOuJAQbE04heAMqWejpub6760du8iH50"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.TestCreateUser"
+  }, {
+    "name" : "testMethod",
+    "value" : "userCreate"
+  }, {
+    "name" : "suite",
+    "value" : "user.TestCreateUser"
+  }, {
+    "name" : "host",
+    "value" : "Ivan-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14574@Ivan-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d3fcd5550c144a42.json",
+  "parameterValues" : [ ]
+}

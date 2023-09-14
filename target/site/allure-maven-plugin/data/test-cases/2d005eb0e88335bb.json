@@ -1,0 +1,155 @@
+{
+  "uid" : "2d005eb0e88335bb",
+  "name" : "Логин с валидным email и неверным паролем",
+  "fullName" : "user.TestUserLogin.userLoginWithIncorrectPassword",
+  "historyId" : "d33a0c428e62dcf8ae50aeac885fe01",
+  "time" : {
+    "start" : 1694676433969,
+    "stop" : 1694676440654,
+    "duration" : 6685
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676438971,
+        "stop" : 1694676438983,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676438983,
+        "stop" : 1694676439562,
+        "duration" : 579
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@6b02b8d7"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Создание собственного Email и пароля для логина",
+      "time" : {
+        "start" : 1694676439572,
+        "stop" : 1694676439572,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "darrell.turner@hotmail.com"
+      }, {
+        "name" : "password",
+        "value" : "eiu8whjk"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Логин пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676439572,
+        "stop" : 1694676440087,
+        "duration" : 515
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userLogin",
+        "value" : "api.user.UserLogin@41e02100"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676440087,
+        "stop" : 1694676440654,
+        "duration" : 567
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWQ3OWVkMjgwMDAxYjM2MTAxNSIsImlhdCI6MTY5NDY3NjQzOSwiZXhwIjoxNjk0Njc3NjM5fQ.EkOqG946lPlt8d8m8SIOv0ghqV5zV1KfAaaBEpM1pyY"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.TestUserLogin"
+  }, {
+    "name" : "testMethod",
+    "value" : "userLoginWithIncorrectPassword"
+  }, {
+    "name" : "suite",
+    "value" : "user.TestUserLogin"
+  }, {
+    "name" : "host",
+    "value" : "Ivan-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14574@Ivan-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d005eb0e88335bb.json",
+  "parameterValues" : [ ]
+}

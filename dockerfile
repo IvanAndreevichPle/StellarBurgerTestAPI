@@ -15,9 +15,4 @@ RUN mvn dependency:go-offline
 COPY . .
 
 # Собираем проект с помощью Maven
-RUN mvn clean install -DskipTests=true
-
-# Запускаем тесты и генерируем отчет Allure
-CMD mvn test
-
-CMD mvn allure:report
+RUN mvn test allure:report

@@ -1,0 +1,230 @@
+{
+  "uid" : "b56db6ac2b68003f",
+  "name" : "Проверка изменения email уже зарегистрированный другим пользователем",
+  "fullName" : "user.TestChangeUserData.changeToExistingEmail",
+  "historyId" : "6f5e51f141504b8a46e2e99caa947ee8",
+  "time" : {
+    "start" : 1694676462149,
+    "stop" : 1694676472498,
+    "duration" : 10349
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676467162,
+        "stop" : 1694676467175,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676467176,
+        "stop" : 1694676467744,
+        "duration" : 568
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@7f26df8d"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676467753,
+        "stop" : 1694676467753,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676467753,
+        "stop" : 1694676468306,
+        "duration" : 553
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@6da4e4f2"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Получение данных пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676468316,
+        "stop" : 1694676469660,
+        "duration" : 1344
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWY0OWVkMjgwMDAxYjM2MTAxZiIsImlhdCI6MTY5NDY3NjQ2OCwiZXhwIjoxNjk0Njc3NjY4fQ.GA2V3FraJ9-GG_KvJxEVsM_-DwK8NRt7nZcDzJatFl4"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Передача данных пользователя: email, пароль, имя",
+      "time" : {
+        "start" : 1694676469668,
+        "stop" : 1694676469668,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "tracee.green@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "null"
+      }, {
+        "name" : "name",
+        "value" : "null"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Изменение данных пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676469668,
+        "stop" : 1694676471242,
+        "duration" : 1574
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userData",
+        "value" : "api.user.UserData@5dfdac04"
+      }, {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWYzOWVkMjgwMDAxYjM2MTAxZCIsImlhdCI6MTY5NDY3NjQ2NywiZXhwIjoxNjk0Njc3NjY3fQ.2uY9vLlipIIk2Kaq8kQRSruK12ZR22o30DurZVlkaU8"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676471242,
+        "stop" : 1694676471930,
+        "duration" : 688
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWY0OWVkMjgwMDAxYjM2MTAxZiIsImlhdCI6MTY5NDY3NjQ2OCwiZXhwIjoxNjk0Njc3NjY4fQ.GA2V3FraJ9-GG_KvJxEVsM_-DwK8NRt7nZcDzJatFl4"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676471930,
+        "stop" : 1694676472498,
+        "duration" : 568
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWYzOWVkMjgwMDAxYjM2MTAxZCIsImlhdCI6MTY5NDY3NjQ2NywiZXhwIjoxNjk0Njc3NjY3fQ.2uY9vLlipIIk2Kaq8kQRSruK12ZR22o30DurZVlkaU8"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.TestChangeUserData"
+  }, {
+    "name" : "testMethod",
+    "value" : "changeToExistingEmail"
+  }, {
+    "name" : "suite",
+    "value" : "user.TestChangeUserData"
+  }, {
+    "name" : "host",
+    "value" : "Ivan-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14574@Ivan-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b56db6ac2b68003f.json",
+  "parameterValues" : [ ]
+}

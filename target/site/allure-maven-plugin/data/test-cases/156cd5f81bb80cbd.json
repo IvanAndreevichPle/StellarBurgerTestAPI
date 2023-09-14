@@ -1,0 +1,155 @@
+{
+  "uid" : "156cd5f81bb80cbd",
+  "name" : "Проверка статуса заказа в структуре",
+  "fullName" : "order.TestGetOrder.checkStatus",
+  "historyId" : "fe0050510c9a800306d42b738e5ef319",
+  "time" : {
+    "start" : 1694676322731,
+    "stop" : 1694676327398,
+    "duration" : 4667
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676322734,
+        "stop" : 1694676322748,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676322748,
+        "stop" : 1694676323440,
+        "duration" : 692
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@3adf81d"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Создание заказа методом POST: {{Order_URL}}",
+      "time" : {
+        "start" : 1694676323452,
+        "stop" : 1694676324538,
+        "duration" : 1086
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "order",
+        "value" : "api.order.Order@5dabd134"
+      }, {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNTYzOWVkMjgwMDAxYjM2MGZmMSIsImlhdCI6MTY5NDY3NjMyMywiZXhwIjoxNjk0Njc3NTIzfQ.tcRC0WMNBAnY25e28qQy76Yl9Akeq3vGeNmwn4VEFFc"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Получение данных заказа GET: {{Order_URL}}",
+      "time" : {
+        "start" : 1694676324539,
+        "stop" : 1694676326636,
+        "duration" : 2097
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNTYzOWVkMjgwMDAxYjM2MGZmMSIsImlhdCI6MTY5NDY3NjMyMywiZXhwIjoxNjk0Njc3NTIzfQ.tcRC0WMNBAnY25e28qQy76Yl9Akeq3vGeNmwn4VEFFc"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676326651,
+        "stop" : 1694676327398,
+        "duration" : 747
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNTYzOWVkMjgwMDAxYjM2MGZmMSIsImlhdCI6MTY5NDY3NjMyMywiZXhwIjoxNjk0Njc3NTIzfQ.tcRC0WMNBAnY25e28qQy76Yl9Akeq3vGeNmwn4VEFFc"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "order"
+  }, {
+    "name" : "testClass",
+    "value" : "order.TestGetOrder"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkStatus"
+  }, {
+    "name" : "suite",
+    "value" : "order.TestGetOrder"
+  }, {
+    "name" : "host",
+    "value" : "Ivan-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14574@Ivan-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "156cd5f81bb80cbd.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,291 @@
+[ {
+  "uid" : "d4da22d0a5277a2",
+  "name" : "Создание двух одинаковых пользователей",
+  "time" : {
+    "start" : 1694676402341,
+    "stop" : 1694676411905,
+    "duration" : 9564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9fc42c3e048abe49",
+  "name" : "Изменение почтового ящика пользователя",
+  "time" : {
+    "start" : 1694676455101,
+    "stop" : 1694676462146,
+    "duration" : 7045
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f01e1ab2609241d",
+  "name" : "Проверка даты заказа в структуре",
+  "time" : {
+    "start" : 1694676306235,
+    "stop" : 1694676309979,
+    "duration" : 3744
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d005eb0e88335bb",
+  "name" : "Логин с валидным email и неверным паролем",
+  "time" : {
+    "start" : 1694676433969,
+    "stop" : 1694676440654,
+    "duration" : 6685
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1d8bde9a42fa6a2",
+  "name" : "Создание пользоватлея без имени",
+  "time" : {
+    "start" : 1694676386055,
+    "stop" : 1694676391492,
+    "duration" : 5437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "166bf309987a6c12",
+  "name" : "Логин несуществующего пользователя",
+  "time" : {
+    "start" : 1694676418128,
+    "stop" : 1694676427115,
+    "duration" : 8987
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3fcd5550c144a42",
+  "name" : "Создание пользователя",
+  "time" : {
+    "start" : 1694676411907,
+    "stop" : 1694676417906,
+    "duration" : 5999
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b56db6ac2b68003f",
+  "name" : "Проверка изменения email уже зарегистрированный другим пользователем",
+  "time" : {
+    "start" : 1694676462149,
+    "stop" : 1694676472498,
+    "duration" : 10349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ed488674a69ba81",
+  "name" : "Проверка изменения данных без авторизации",
+  "time" : {
+    "start" : 1694676479545,
+    "stop" : 1694676486534,
+    "duration" : 6989
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cf3eaec77c15f87",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676366029,
+    "stop" : 1694676372312,
+    "duration" : 6283
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b76cba72109443f8",
+  "name" : "Проверка, что в структуре есть ID",
+  "time" : {
+    "start" : 1694676318344,
+    "stop" : 1694676322729,
+    "duration" : 4385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "55663530e69f344d",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676358219,
+    "stop" : 1694676366026,
+    "duration" : 7807
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "209650930685ae5d",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676330034,
+    "stop" : 1694676337028,
+    "duration" : 6994
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "156cd5f81bb80cbd",
+  "name" : "Проверка статуса заказа в структуре",
+  "time" : {
+    "start" : 1694676322731,
+    "stop" : 1694676327398,
+    "duration" : 4667
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d6fe3be82b288928",
+  "name" : "Логин с валидными логином и паролем",
+  "time" : {
+    "start" : 1694676427118,
+    "stop" : 1694676433966,
+    "duration" : 6848
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7331b163625c494",
+  "name" : "Изменение пароля пользователя",
+  "time" : {
+    "start" : 1694676472501,
+    "stop" : 1694676479540,
+    "duration" : 7039
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84fa2b0871332398",
+  "name" : "Изменение всех данных о пользователе",
+  "time" : {
+    "start" : 1694676447990,
+    "stop" : 1694676455098,
+    "duration" : 7108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2fbf4c99935780fd",
+  "name" : "Создание пользователя без email",
+  "time" : {
+    "start" : 1694676391495,
+    "stop" : 1694676396873,
+    "duration" : 5378
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1110990643dc62e0",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676378763,
+    "stop" : 1694676386049,
+    "duration" : 7286
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "439086b054f7e5d5",
+  "name" : "Изменение имени пользоватлея",
+  "time" : {
+    "start" : 1694676440661,
+    "stop" : 1694676447986,
+    "duration" : 7325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81c6349b2d5c3505",
+  "name" : "ППроверка номера заказа в структуре",
+  "time" : {
+    "start" : 1694676314576,
+    "stop" : 1694676318342,
+    "duration" : 3766
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "544a5fff48af955f",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676344150,
+    "stop" : 1694676351293,
+    "duration" : 7143
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "382f4bdf889ed31c",
+  "name" : "Создание пользователя без пароля",
+  "time" : {
+    "start" : 1694676396876,
+    "stop" : 1694676402338,
+    "duration" : 5462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e3f2f6dc30b90029",
+  "name" : "Получение заказа",
+  "time" : {
+    "start" : 1694676327400,
+    "stop" : 1694676329991,
+    "duration" : 2591
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba29be29d731d1d7",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676337032,
+    "stop" : 1694676344147,
+    "duration" : 7115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6d2cd57c36d2494",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676372315,
+    "stop" : 1694676378759,
+    "duration" : 6444
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63752cf3ac88e37b",
+  "name" : "Проверка переданных ингредиетов в заказе",
+  "time" : {
+    "start" : 1694676309984,
+    "stop" : 1694676314573,
+    "duration" : 4589
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8de0019c857de57f",
+  "name" : "Получение заказа неавторизованным пользователем",
+  "time" : {
+    "start" : 1694676297727,
+    "stop" : 1694676306141,
+    "duration" : 8414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "96a453466563d4e1",
+  "name" : "Создание заказа",
+  "time" : {
+    "start" : 1694676351295,
+    "stop" : 1694676358215,
+    "duration" : 6920
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

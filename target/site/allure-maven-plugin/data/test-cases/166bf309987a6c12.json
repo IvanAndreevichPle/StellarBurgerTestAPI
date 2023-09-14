@@ -1,0 +1,167 @@
+{
+  "uid" : "166bf309987a6c12",
+  "name" : "Логин несуществующего пользователя",
+  "fullName" : "user.TestUserLogin.notExistingUser",
+  "historyId" : "46ee1f8946694b6a398152a994d2ac0e",
+  "time" : {
+    "start" : 1694676418128,
+    "stop" : 1694676427115,
+    "duration" : 8987
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676423131,
+        "stop" : 1694676423141,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676423141,
+        "stop" : 1694676423928,
+        "duration" : 787
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@a535272"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676423939,
+        "stop" : 1694676423940,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Получение Email и пароля от созданого пользователя",
+      "time" : {
+        "start" : 1694676423940,
+        "stop" : 1694676423940,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@767ed653"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Логин пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676423940,
+        "stop" : 1694676424671,
+        "duration" : 731
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userLogin",
+        "value" : "api.user.UserLogin@7c58d9f7"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676424671,
+        "stop" : 1694676427115,
+        "duration" : 2444
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDJiNWM3OWVkMjgwMDAxYjM2MTAxMCIsImlhdCI6MTY5NDY3NjQyMywiZXhwIjoxNjk0Njc3NjIzfQ.1_Lbx_TR63pkdzl_lLSxzaYidABG6GEBkaX4uRRucUA"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "user"
+  }, {
+    "name" : "testClass",
+    "value" : "user.TestUserLogin"
+  }, {
+    "name" : "testMethod",
+    "value" : "notExistingUser"
+  }, {
+    "name" : "suite",
+    "value" : "user.TestUserLogin"
+  }, {
+    "name" : "host",
+    "value" : "Ivan-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14574@Ivan-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "166bf309987a6c12.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,137 @@
+{
+  "uid" : "6cf3eaec77c15f87",
+  "name" : "Создание заказа",
+  "fullName" : "order.TestOrder.checkOrderCreation[Создание заказа. Тестовые данные: burger = [Ljava.lang.String;@4fe8c3f, needTkn = false, statusCode = 200, status = null]",
+  "historyId" : "35fc55e8f4c37ecb6a5871e58816562",
+  "time" : {
+    "start" : 1694676366029,
+    "stop" : 1694676372312,
+    "duration" : 6283
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Создание дефолтного пользователя",
+      "time" : {
+        "start" : 1694676371032,
+        "stop" : 1694676371044,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Cоздание пользователя через API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676371044,
+        "stop" : 1694676371538,
+        "duration" : 494
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user",
+        "value" : "api.user.User@7e677565"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Создание заказа методом POST: {{Order_URL}}",
+      "time" : {
+        "start" : 1694676371538,
+        "stop" : 1694676371934,
+        "duration" : 396
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "order",
+        "value" : "api.order.Order@a4e0b08"
+      }, {
+        "name" : "accessToken",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Удаление пользователя API: {{AUTH_USER}}",
+      "time" : {
+        "start" : 1694676371944,
+        "stop" : 1694676372312,
+        "duration" : 368
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : ""
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "order"
+  }, {
+    "name" : "testClass",
+    "value" : "order.TestOrder"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkOrderCreation[Создание заказа. Тестовые данные: burger = [Ljava.lang.String;@4fe8c3f, needTkn = false, statusCode = 200, status = null]"
+  }, {
+    "name" : "suite",
+    "value" : "order.TestOrder"
+  }, {
+    "name" : "host",
+    "value" : "Ivan-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "14574@Ivan-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6cf3eaec77c15f87.json",
+  "parameterValues" : [ ]
+}
