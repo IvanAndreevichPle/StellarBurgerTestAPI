@@ -1,19 +1,23 @@
-# Используем базовый образ Ubuntu
-FROM ubuntu:latest
+# Используем базовый образ с Java и Maven
+FROM maven:3.8.4-openjdk-11-slim
 
-# Устанавливаем необходимые пакеты
-RUN apt-get update && apt-get install -y \
-    openjdk-11-jdk-headless \
-    maven \
-    wget
-# Собираем проект с помощью Maven
-RUN mvn clean
+# Устанавливаем дополнительные пакеты (если необходимо)
+# RUN apt-get update && apt-get install -y wget
 
-# Копируем исходный код проекта в контейнер
-COPY . /app
-
-# Устанавливаем рабочую директорию
+# Создаем рабочую директорию
 WORKDIR /app
+
+# Копируем только файлы, необходимые для установки зависимостей
+COPY pom.xml .
+RUN mvn dependency:go-offline
+
+# Копируем все остальные файлы проекта
+COPY . .
+
+# Собираем проект с помощью Maven
+RUN mvn clean install -DskipTests=true
 
 # Запускаем тесты и генерируем отчет Allure
 CMD mvn test
+
+CMD mvn allure:report

@@ -17,33 +17,39 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>5.3.0</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10.1</version>
         </dependency>
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-junit4</artifactId>
             <version>${allure.version}</version>
         </dependency>
+
         <dependency>
             <!-- модуль взаимодействия Allure и RestAssured -->
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.aeonbits.owner</groupId>
             <artifactId>owner</artifactId>
@@ -65,19 +71,11 @@
     <build>
         <plugins>
             <plugin>
-                <!-- настройка плагина maven-surefire-plugin -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
                 <configuration>
-                    <testFailureIgnore>false</testFailureIgnore>
+                    <useSystemClassLoader>false</useSystemClassLoader>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
@@ -89,9 +87,8 @@
                     </properties>
                     <systemProperties>
                         <property>
-                            <!-- папка, в которую будут генерироваться отчёты Allure -->
                             <name>allure.results.directory</name>
-                            <value>allure-results</value>
+                            <value>${project.build.directory}/allure-results</value>
                         </property>
                     </systemProperties>
                 </configuration>
@@ -103,16 +100,12 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <!-- подключение плагина allure-maven для вызова функций Allure с помощью Maven    -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
-                <configuration>
-                    <reportDirectory>none</reportDirectory>
-                    <reportVersion>none</reportVersion>
-                </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
