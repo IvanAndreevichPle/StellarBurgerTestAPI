@@ -109,8 +109,8 @@
                 <artifactId>allure-maven</artifactId>
                 <version>2.10.0</version>
                 <configuration>
-                    <reportDirectory>allure-results</reportDirectory>
-                    <reportVersion>2.15.0</reportVersion>
+                    <reportDirectory>none</reportDirectory>
+                    <reportVersion>none</reportVersion>
                 </configuration>
             </plugin>
         </plugins>
