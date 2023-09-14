@@ -2,10 +2,14 @@ version: '3'
 services:
   myapp:
     build: .
-    ports:
-      - "8080:8080"
-    volumes:
-      - /target/allure-results:/app/target/allure-results
-    networks:
-      - mynetwork
     tty: true
+  allure:
+    image: "frankescobar/allure-docker-service"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: None
+      KEEP_HISTORY: 5
+    ports:
+      - "5050:5050"
+    volumes:
+      - ${PWD}/allure-results:/app/allure-results
+      - ${PWD}/allure-reports:/app/default-reports

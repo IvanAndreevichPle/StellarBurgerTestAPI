@@ -17,4 +17,4 @@ WORKDIR /app
 RUN mvn clean install
 
 # Запускаем тесты и генерируем отчет Allure
-CMD mvn test allure:serve
+CMD mvn test
